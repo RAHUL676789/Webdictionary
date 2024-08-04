@@ -8,6 +8,7 @@ h1{
     margin-bottom: 0.3rem;
 }
 
+
 body{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;? */
     font-weight: 300;
@@ -55,4 +56,17 @@ input{
 
 .new::marker{
     content: "🤔 ";
+}
+
+#heading{
+    background: url("img.JPG");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+}
+
+.input{
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }

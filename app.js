@@ -7,11 +7,15 @@ let body=document.querySelector("body");
 // let p1=document.querySelector(".meaning1 .pOs");
 
 
-btn.addEventListener("click",async()=>{   
 
+
+
+btn.addEventListener("click",async()=>{   
+  
  let res2=await callApi();
  let inp=document.querySelector("input");
  inp.value="";
+ 
  
  console.log(res2);
  h1.innerText=` Word : "${res2[0].word}"`;
@@ -143,14 +147,17 @@ function show2(definitions){
 
 
 async function callApi(word){
+  
      let inp=document.querySelector("input");
      word=inp.value;
      let url=`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     
-    
+
+ 
     let res=await axios.get(url);
     return res.data
   
 }
+
 
 
